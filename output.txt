@@ -1,11 +1,11 @@
 Xenos
 Ksenos
-xenofontas
-ksenofontas
 ksenofwntas
 xenofwntas
-Aarwn
+ksenofontas
+xenofontas
 Aaron
+Aarwn
 Aberkios
 Abraam
 Abrokomis
@@ -13,8 +13,8 @@ Agathaggelos
 Agathoklis
 Agathonikos
 Agathos
-Agathwn
 Agathon
+Agathwn
 Agamemnwn
 Agamemnon
 Agapitos

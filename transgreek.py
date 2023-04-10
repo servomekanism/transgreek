@@ -24,6 +24,9 @@
 
 import sys
 
+if len(sys.argv) != 3:
+    sys.exit("Usage: python3 %s <input_file> <output_file>" % sys.argv[0])
+
 greek_alphabet = 'ΆΑαάΒβΓγΔδΈΕεέΖζΉΗηήΊΙιίΚκΛλΜμΝνΌΟοόΠπΡρΣσςΤτΎΥυύΦφΧχΏΩωώ'
 
 latin_alphabet_xuw = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtUUuuFfXxWWww'

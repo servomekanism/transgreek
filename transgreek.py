@@ -44,7 +44,6 @@ with open(input_file) as f:
         perm_eight = line.translate(greek2latin_hyo).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "Ks").replace("ξ", "ks").replace(" ", "")
         
         #https://www.digitalocean.com/community/tutorials/get-unique-values-from-a-list-in-python
-
         perms_list = []
         perms_list.append(perm_one)
         perms_list.append(perm_two)

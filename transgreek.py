@@ -26,8 +26,6 @@ greek2latin_hyo = str.maketrans(greek_alphabet, latin_alphabet_hyo)
 #θξψ  
 # .replace("Ξ", "X").replace("ξ", "x")
 
-#print('αυτο ειναι ενα παραδειγμα γιώργος καραγιαννίδης. Πονηρή αλεπού. Χαρίζω. Πολύ χύμα. Έθαψα. Έψαξα.'.translate(greek2latin_xuw).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "Ks").replace("ξ", "ks"))
-
 input_file  = sys.argv[1]
 of = open(sys.argv[2], 'w')
 
@@ -42,6 +40,15 @@ with open(input_file) as f:
         perm_six   = line.translate(greek2latin_huo).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "Ks").replace("ξ", "ks").replace(" ", "")
         perm_seven = line.translate(greek2latin_hyw).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "Ks").replace("ξ", "ks").replace(" ", "")
         perm_eight = line.translate(greek2latin_hyo).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "Ks").replace("ξ", "ks").replace(" ", "")
+
+        perm_nine       = line.translate(greek2latin_xuw).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "X").replace("ξ", "x").replace(" ", "")
+        perm_ten        = line.translate(greek2latin_xuo).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "X").replace("ξ", "x").replace(" ", "")
+        perm_eleven     = line.translate(greek2latin_xyw).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "X").replace("ξ", "x").replace(" ", "")
+        perm_twelve     = line.translate(greek2latin_xyo).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "X").replace("ξ", "x").replace(" ", "")
+        perm_thirteen   = line.translate(greek2latin_huw).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "X").replace("ξ", "x").replace(" ", "")
+        perm_fourteen   = line.translate(greek2latin_huo).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "X").replace("ξ", "x").replace(" ", "")
+        perm_fifteen    = line.translate(greek2latin_hyw).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "X").replace("ξ", "x").replace(" ", "")
+        perm_sixteen    = line.translate(greek2latin_hyo).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "X").replace("ξ", "x").replace(" ", "")
         
         #https://www.digitalocean.com/community/tutorials/get-unique-values-from-a-list-in-python
         perms_list = []
@@ -53,6 +60,14 @@ with open(input_file) as f:
         perms_list.append(perm_six)
         perms_list.append(perm_seven)
         perms_list.append(perm_eight)
+        perms_list.append(perm_nine)
+        perms_list.append(perm_ten)
+        perms_list.append(perm_eleven)
+        perms_list.append(perm_twelve)
+        perms_list.append(perm_thirteen)
+        perms_list.append(perm_fourteen)
+        perms_list.append(perm_fifteen)
+        perms_list.append(perm_sixteen)
 
         perms_set = set(perms_list)
 

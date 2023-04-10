@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import sys
+import itertools
 
 greek_alphabet = 'ΆΑαάΒβΓγΔδΈΕεέΖζΉΗηήΊΙιίΚκΛλΜμΝνΌΟοόΠπΡρΣσςΤτΎΥυύΦφΧχΏΩωώ'
 
@@ -28,7 +29,7 @@ greek2latin_hyo = str.maketrans(greek_alphabet, latin_alphabet_hyo)
 #print('αυτο ειναι ενα παραδειγμα γιώργος καραγιαννίδης. Πονηρή αλεπού. Χαρίζω. Πολύ χύμα. Έθαψα. Έψαξα.'.translate(greek2latin_xuw).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "Ks").replace("ξ", "ks"))
 
 input_file  = sys.argv[1]
-output_file = sys.argv[2]
+of = open(sys.argv[2], 'w')
 
 with open(input_file) as f:
     Lines = f.readlines()
@@ -53,11 +54,9 @@ with open(input_file) as f:
         perms_list.append(perm_six)
         perms_list.append(perm_seven)
         perms_list.append(perm_eight)
+
         perms_set = set(perms_list)
-        #perms_final = list(perms_set)
 
-        print(perms_set)
-
-#        with open(output_file, 'w') as of:
-#            of.write('\n'.join(perms_list))
+        for item in perms_set:
+            of.write(item)
 f.close()

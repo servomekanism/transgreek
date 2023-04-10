@@ -24,7 +24,6 @@ greek2latin_hyw = str.maketrans(greek_alphabet, latin_alphabet_hyw)
 greek2latin_hyo = str.maketrans(greek_alphabet, latin_alphabet_hyo)
 
 #θξψ  
-# .replace("Ξ", "X").replace("ξ", "x")
 
 input_file  = sys.argv[1]
 of = open(sys.argv[2], 'w')
@@ -71,6 +70,7 @@ with open(input_file) as f:
 
         perms_set = set(perms_list)
 
+        # why doesn't the `with open(of, 'w')` work?
         for item in perms_set:
             of.write(item)
 f.close()

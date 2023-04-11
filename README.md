@@ -8,6 +8,12 @@ Translate a greek-lettered wordlist to greeklish. May have some dups as some gre
 python3 transgreek.py input.txt output.txt
 ```
 
+You can then remove the dups and sort it
+
+```bash
+sort -u output.txt > sorted.txt
+```
+
 You can then combine the generated lists with
 [wordlister](https://github.com/servomekanism/wordlister) to create male and female
 combined lists

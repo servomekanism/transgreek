@@ -50,9 +50,9 @@ greek2latin_hyo = str.maketrans(greek_alphabet, latin_alphabet_hyo)
 #θξψ  
 
 input_file  = sys.argv[1]
-of = open(sys.argv[2], 'w')
+output_file = sys.argv[2]
 
-with open(input_file) as f:
+with open(input_file) as f, open(output_file, 'w') as outfile:
     Lines = f.readlines()
     for line in Lines:
         perm_one   = line.translate(greek2latin_xuw).replace("Ψ", "Ps").replace("ψ", "ps").replace("Θ", "Th").replace("θ", "th").replace("Ξ", "Ks").replace("ξ", "ks").replace(" ", "")
@@ -128,7 +128,6 @@ with open(input_file) as f:
         
         perms_set = set(perms_list)
 
-        # why doesn't the `with open(of, 'w')` work?
         for item in perms_set:
-            of.write(item)
+            outfile.write(item)
 f.close()

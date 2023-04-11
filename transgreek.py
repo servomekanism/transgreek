@@ -27,16 +27,16 @@ import sys
 if len(sys.argv) != 3:
     sys.exit("Usage: python3 %s <input_file> <output_file>" % sys.argv[0])
 
-greek_alphabet = 'ΆΑαάΒβΓγΔδΈΕεέΖζΉΗηήΊΙιίΚκΛλΜμΝνΌΟοόΠπΡρΣσςΤτΎΥυύΦφΧχΏΩωώ'
+greek_alphabet = 'ΆΑαάΒβΓγΔδΈΕεέΖζΉΗηήΊΙιίϊΐΚκΛλΜμΝνΌΟοόΠπΡρΣσςΤτΎΥυύΦφΧχΏΩωώ'
 
-latin_alphabet_xuw = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtUUuuFfXxWWww'
-latin_alphabet_xuo = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtUUuuFfXxOOoo'
-latin_alphabet_xyo = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtYYyyFfXxOOoo'
-latin_alphabet_xyw = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtYYyyFfXxWWww'
-latin_alphabet_huw = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtUUuuFfHhWWww'
-latin_alphabet_huo = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtUUuuFfHhOOoo'
-latin_alphabet_hyo = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtYYyyFfHhOOoo'
-latin_alphabet_hyw = 'AAaaBbGgDdEEeeZzIIiiIIiiKkLlMmNnOOooPpRrSssTtYYyyFfHhWWww'
+latin_alphabet_xuw = 'AAaaBbGgDdEEeeZzIIiiIIiiiiKkLlMmNnOOooPpRrSssTtUUuuFfXxWWww'
+latin_alphabet_xuo = 'AAaaBbGgDdEEeeZzIIiiIIiiiiKkLlMmNnOOooPpRrSssTtUUuuFfXxOOoo'
+latin_alphabet_xyo = 'AAaaBbGgDdEEeeZzIIiiIIiiiiKkLlMmNnOOooPpRrSssTtYYyyFfXxOOoo'
+latin_alphabet_xyw = 'AAaaBbGgDdEEeeZzIIiiIIiiiiKkLlMmNnOOooPpRrSssTtYYyyFfXxWWww'
+latin_alphabet_huw = 'AAaaBbGgDdEEeeZzIIiiIIiiiiKkLlMmNnOOooPpRrSssTtUUuuFfHhWWww'
+latin_alphabet_huo = 'AAaaBbGgDdEEeeZzIIiiIIiiiiKkLlMmNnOOooPpRrSssTtUUuuFfHhOOoo'
+latin_alphabet_hyo = 'AAaaBbGgDdEEeeZzIIiiIIiiiiKkLlMmNnOOooPpRrSssTtYYyyFfHhOOoo'
+latin_alphabet_hyw = 'AAaaBbGgDdEEeeZzIIiiIIiiiiKkLlMmNnOOooPpRrSssTtYYyyFfHhWWww'
 
 greek2latin_xuw = str.maketrans(greek_alphabet, latin_alphabet_xuw)
 greek2latin_xuo = str.maketrans(greek_alphabet, latin_alphabet_xuo)
